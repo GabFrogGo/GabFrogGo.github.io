@@ -1,0 +1,152 @@
+/*Estructura general de la página*/
+/*Pagina en general*/
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    /*background-color: rgba(72, 119, 207, 0.467);*/
+    overflow-x: hidden;
+    background-image: linear-gradient(
+        16deg,
+        rgba(63, 81, 181, 1) 12.5%,
+        rgba(65, 94, 191, 1) 25%,
+        rgba(68, 107, 201, 1) 37.5%,
+        rgba(71, 120, 211, 1) 50%,
+        rgba(74, 133, 221, 1) 62.5%,
+        rgba(77, 146, 231, 1) 75%,
+        rgba(80, 159, 241, 1) 87.5%,
+        rgba(83, 172, 251, 1) 100%
+    );
+}
+.allpage {
+    min-height: 100%; /*altura mínima igual a la altura de la ventana*/
+    padding-bottom: 100px; /*espacio para el footer*/
+    box-sizing: border-box; /*incluir el padding en la altura del contenedor*/
+  }
+  
+
+/*
+* {
+    box-sizing: border-box;
+}
+*/
+
+/*Barra de busqueda*/
+.barnav {
+    margin: 8px;
+}
+.bardisplinks {
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(23, 23, 205, 0.567);
+    border-radius: 25px;
+}
+.xebutton {
+    float: left;
+    padding-right: auto;
+}
+.xebutton2 {
+    float: right;
+    padding-left: 75%;
+}
+.xeicon {
+    float: right;
+    position: relative;
+    align-items: center;
+}
+.bardisplinks a {
+    padding: 10px 15px 10px 15px !important;
+    font-size: 19px;
+    text-align: center;
+    user-select: none;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #333335;
+    border-radius: 25px;
+    font-family: 'Trebuchet MS';
+}
+.bardisplinks a:hover {
+    background-color: rgba(9, 9, 149, 0.751);
+    color: #333335;
+    border-radius: 25px;
+}
+
+/*Footer*/
+footer {
+    background-color: gray;
+    position: fixed;
+    bottom: 0;
+    color: black;
+    width: 100%;
+    padding: 10px;
+    height: 20px;
+}
+.footergroup {
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+}
+  @media only screen and (max-width: 768px) {
+    footer {
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    footer {
+        height: 60px;
+    }
+}
+  
+.footp1 {
+    text-align: left;
+    margin-left: 20px;
+    margin: 0;
+    color: black;
+    flex-grow: 1;
+}
+  
+.footp2 {
+    text-align: right;
+    margin: 0;
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+  
+.footp3 {
+    text-align: right;
+    margin: 0;
+    margin-right: 7px;
+    text-decoration: none;
+    color: black;
+}
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+    .footergroup {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: space-between;
+    }
+    .footp1 {
+        margin-left: 20px;
+        margin: 0;
+        color: black;
+        flex-grow: 1;
+    }
+      
+    .footp2 {
+        margin: 0;
+        text-decoration: none;
+        color: black;
+    }
+      
+    .footp3 {
+        margin: 0;
+        text-decoration: none;
+        color: black;
+    }
+  }

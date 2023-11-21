@@ -1,0 +1,151 @@
+/*Vinulación del CSS global con el usado en home*/
+@import "global.css";
+
+/*Ajuste*/
+@media only screen and (max-width: 600px) {
+  /* Estilos para pantallas de hasta 600 píxeles de ancho *Telefonos* */
+  body {
+    font-size: 14px;
+    min-height: 70vh;
+  }
+  .underbutton button {
+    text-decoration: none;
+    position: relative;
+    border-color: dodgerblue;
+    margin: 6px;
+    margin-top: 20px;
+    background-color: white;
+    color: #333335;
+    border-radius: 25px;
+    padding: 6px 6px;
+    font-family: 'Trebuchet MS';
+    font-size: 14px;
+}
+.underbutton2 button {
+    text-decoration: none;
+    position: relative;
+    border-color: dodgerblue;
+    margin: 6px;
+    margin-top: 20px;
+    background-color: white;
+    color: #333335;
+    border-radius: 25px;
+    padding: 8px 8px;
+    font-family: 'Trebuchet MS';
+    font-size: 16px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  /* Estilos para pantallas de entre 601 y 900 píxeles de ancho */
+  body {
+    font-size: 16px;
+    min-height: 85vh;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  /* Estilos para pantallas de más de 900 píxeles de ancho */
+  body {
+    font-size: 18px;
+    min-height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  /* Estilos para pantallas de más de 900 píxeles de ancho */
+  body {
+    font-size: 18px;
+    min-height: 100vh;
+  }
+}
+
+/*Cuerpo superior*/
+.bodyimg {
+    text-align: center;
+    margin-top: 50px;
+}
+.bodytitle {
+    text-align: center;
+    position: relative;
+    font-family: 'Trebuchet MS';
+}
+.bodytext {
+    text-align: center;
+    position: relative;
+    font-family: 'Trebuchet MS';
+    margin-left: 8px;
+    margin-left: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.bodytext a {
+    color: black;
+}
+/*Cuerpo inferior*/
+.underbody {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+/*Botones*/
+/*Para telefonos*/
+/* Estilos para pantallas móviles */
+@media screen and (max-width: 480px) {
+    /* Ocultar botones actuales */
+    .underbutton button {
+      display: none;
+    }
+    
+    /* Mostrar nuevos botones */
+    .underbutton2 button {
+      text-decoration: none;
+      position: relative;
+      border-color: dodgerblue;
+      margin: 6px;
+      margin-top: 20px;
+      background-color: white;
+      color: black;
+      border-radius: 25px;
+      padding: 10px 10px;
+      font-family: 'Trebuchet MS';
+      font-size: 18px;
+      cursor: pointer;
+      display: inline-block;
+    }
+  }
+  
+  /* Estilos para pantallas de escritorio */
+  @media screen and (min-width: 481px) {
+    /* Ocultar nuevos botones */
+    .underbutton2 button {
+      display: none;
+    }
+    
+    /* Mostrar botones actuales */
+    .underbutton button {
+      text-decoration: none;
+      position: relative;
+      border-color: dodgerblue;
+      margin: 6px;
+      margin-top: 20px;
+      background-color: white;
+      color: black;
+      border-radius: 25px;
+      padding: 10px 10px;
+      font-family: 'Trebuchet MS';
+      font-size: 18px;
+      cursor: pointer;
+      display: inline-block;
+    }
+  }
+  
+.underbutton a :hover {
+    border-radius: 25px;
+    background-color: rgba(23, 23, 205, 0.567);
+}
+.underbutton2 a :hover {
+    border-radius: 25px;
+    background-color: rgba(23, 23, 205, 0.567);
+}

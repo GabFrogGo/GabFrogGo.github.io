@@ -1,0 +1,45 @@
+/*Vinulación del CSS global con el usado en privacy*/
+@import "global.css";
+
+.dispimgtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.priveditp {
+    font-size: 8px;
+}
+
+.trtext {
+    font-size: 14px;
+}
+
+.dispimgtext p {
+    margin-left: 10px;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    font-size: 22px;
+}
+
+@media screen and (min-width: 60px) and (max-width: 900px) {
+    /* Estilos para pantallas de entre 601 y 900 píxeles de ancho */
+    .dispimgtext p {
+      font-size: 18px;
+    }
+    .trtext p {
+        font-size: 10px;
+    }
+  }
+  
+  @media screen and (min-width: 901px) {
+    /* Estilos para pantallas de más de 900 píxeles de ancho */
+    .dispimgtext p {
+      font-size:20px;
+    }
+    .trtext p {
+        font-size: 12px;
+    }
+  }

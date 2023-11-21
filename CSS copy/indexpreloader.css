@@ -1,0 +1,37 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+}
+
+.preloaderone {
+  position: absolute;
+  text-align: center;
+  top: 36%;
+  left: 44%;
+  transform: translate(-50%, -50%);
+  border: 26px solid #f3f3f3;
+  border-top: 26px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 0.3s linear infinite;
+}
+  
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/*.preloaderone {
+  display: flex;
+  box-sizing: border-box;
+  position: absolute;
+  animation: normal;
+  background-color: aqua;
+  width: 90%;
+  height: 10%;
+  overflow: auto;
+  border-radius: 30px;
+}*/

@@ -1,0 +1,85 @@
+body {
+    /*background-color: rgb(204, 191, 175);*/
+    background-image: url(../Resources/pexels-sohail-nachiti-807598.jpg);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.gencontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.colorcontainer {
+    border-radius: 4px;
+    padding: 14px;
+    height: auto;
+    width: auto;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.185);
+}
+.thingscontainer {
+    z-index: 1;
+    border: 4px;
+    border-color: black;
+    border-radius: 4px;
+    padding: 14px;
+    height: auto;
+    width: auto;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.loginheadimg {
+    width: auto;
+    height: 54px;
+}
+#a1, #a2 {
+    text-decoration: underline;
+    color: rgb(34, 123, 224);
+}
+#signupheadtext{
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.856);
+}
+
+.su-user input, .su-mail input, .su-pass input, .su-pass2 input {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.sendformbutton label {
+    width: 85px;
+    height: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 14px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: rgba(158, 157, 157, 0.76);
+    border: 2px solid rgb(173, 173, 173);
+    border-radius: 30px;
+}
+#sbut {
+    display: none;
+}
+.underlogin  p, a{
+    display: inline-block;
+}
+.underlogin p {
+    margin-right: 5px;
+}
+input[type="text"], [type="email"], [type="password"] {
+    background-color: rgba(255, 255, 255, 0);
+    height: 16px;
+    width: 280px;
+}
